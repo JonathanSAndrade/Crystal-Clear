@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Clear - Especialista no Tratamento da Sua Piscina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-img" style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary-blue), var(--neon-blue)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--black); font-weight: bold;">CC</div>
+                <span class="logo-text">Crystal Clear</span>
+            </div>
+            
+            <nav class="navigation" id="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" onclick="scrollToSection('sobre')">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="scrollToSection('servicos')">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="scrollToSection('portfolio')">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="scrollToSection('contato')">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="sobre">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Crystal Clear: transformamos qualquer piscina em um espelho de água pura e cristalina.</h1>
+                <p class="hero-subtitle">Piscineiro especialista em tratamento e limpeza de piscinas, com excelência e compromisso com a sua tranquilidade.</p>
+                <a href="#contato" class="btn-primary">Solicitar Orçamento</a>
+            </div>
+            <div class="hero-visual">
+                <div class="water-effect"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="service-title">Tratamento sob Demanda</h3>
+                    <p class="service-description">Ideal para necessidades pontuais. Serviço completo de limpeza e tratamento quando você mais precisa.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3 class="service-title">Contrato Semanal de Tratamento</h3>
+                    <p class="service-description">Cuidado contínuo e profissional para manter sua piscina sempre perfeita. Tranquilidade garantida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procedures Section -->
+    <section class="procedures">
+        <div class="container">
+            <h2 class="section-title">Nossos Procedimentos</h2>
+            <div class="procedures-content">
+                <div class="procedures-list">
+                    <div class="procedure-item">
+                        <span class="check-icon">✔️</span>
+                        <span class="procedure-text">Limpeza e tratamento completo da piscina</span>
+                    </div>
+                    <div class="procedure-item">
+                        <span class="check-icon">✔️</span>
+                        <span class="procedure-text">Higienização das bordas</span>
+                    </div>
+                    <div class="procedure-item">
+                        <span class="check-icon">✔️</span>
+                        <span class="procedure-text">Escovação do fundo e laterais</span>
+                    </div>
+                    <div class="procedure-item">
+                        <span class="check-icon">✔️</span>
+                        <span class="procedure-text">Retrolavagem do filtro</span>
+                    </div>
+                    <div class="procedure-item">
+                        <span class="check-icon">✔️</span>
+                        <span class="procedure-text">Troca da areia do filtro</span>
+                    </div>
+                    <div class="procedure-item">
+                        <span class="check-icon">✔️</span>
+                        <span class="procedure-text">Limpeza do pré-filtro</span>
+                    </div>
+                    <div class="procedure-item">
+                        <span class="check-icon">✔️</span>
+                        <span class="procedure-text">Decantação da água</span>
+                    </div>
+                    <div class="procedure-item">
+                        <span class="check-icon">✔️</span>
+                        <span class="procedure-text">Correção dos parâmetros químicos</span>
+                    </div>
+                </div>
+                <div class="procedures-visual">
+                    <div class="water-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Por que sua piscina precisa estar sempre limpa?</h2>
+            <div class="benefits-content">
+                <p class="benefits-text">Uma piscina não é apenas lazer — é um investimento no bem-estar da sua família e na valorização do seu espaço. Mas para aproveitar de verdade, é preciso manter a água limpa, cristalina e saudável o ano inteiro. Com a Crystal Clean, você não precisa se preocupar com produtos, equipamentos ou riscos à saúde. Nós cuidamos de tudo para que cada mergulho seja sinônimo de segurança, conforto e tranquilidade.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="benefit-title">Mais saúde</h3>
+                        <p class="benefit-description">Prevenção contra bactérias, fungos e algas.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3 class="benefit-title">Mais economia</h3>
+                        <p class="benefit-description">Manutenção regular evita gastos com correções caras.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="benefit-title">Mais valorização</h3>
+                        <p class="benefit-description">Sua piscina sempre pronta para receber família e amigos.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="benefit-title">Mais praticidade</h3>
+                        <p class="benefit-description">Cuidado profissional sem que você precisa se preocupar.</p>
+                    </div>
+                </div>
+                
+                <p class="benefits-text" style="margin-top: 3rem; font-style: italic;">👉 Crystal Clear — porque sua piscina merece atenção de especialista.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Nosso Portfólio</h2>
+            <div class="portfolio-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <div class="slide-content">
+                            <div class="image-comparison">
+                                <div class="before">
+                                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #0a3d5f;">Antes</div>
+                                    <span class="label">Antes</span>
+                                </div>
+                                <div class="after">
+                                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #50c8ec;">Depois</div>
+                                    <span class="label">Depois</span>
+                                </div>
+                            </div>
+                            <div class="slide-info">
+                                <h3>Limpeza Completa</h3>
+                                <p>Transformação de piscina verde em água cristalina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-nav next" onclick="changeSlide(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <p class="testimonial-text">"Serviço excelente! Minha piscina estava verde e em uma semana ficou cristalina. Super recomendo!"</p>
+                        <div class="testimonial-author">- Carlos Silva</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <p class="testimonial-text">"Profissionalismo e comprometimento. Não preciso mais me preocupar com a manutenção da piscina."</p>
+                        <div class="testimonial-author">- Marina Oliveira</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <p class="testimonial-text">"Atendimento excepcional e preço justo. Minha família agora pode aproveitar a piscina com segurança."</p>
+                        <div class="testimonial-author">- Ricardo Santos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Com que frequência devo fazer a limpeza da piscina?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recomendamos uma limpeza completa semanal para manter a água sempre cristalina e segura para uso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quais produtos vocês utilizam?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Utilizamos produtos de alta qualidade, adequados para cada tipo de piscina e sempre seguindo as normas de segurança.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Preciso estar em casa durante o serviço?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não é necessário. Muitos de nossos clientes nos fornecem acesso à área da piscina e realizamos o serviço mesmo quando não estão em casa.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Vocês fazem manutenção em equipamentos?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, realizamos manutenção em bombas, filtros e outros equipamentos de piscina.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefone</h3>
+                            <p>(00) 00000-0000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>contato@crystalclear.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Endereço</h3>
+                            <p>Av. Exemplo, 123 - Cidade - Estado</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Redes Sociais</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Serviço de Interesse</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="tratamento">Tratamento sob Demanda</option>
+                                <option value="contrato">Contrato Semanal</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <span class="footer-logo">Crystal Clear</span>
+                    <p class="footer-text">Especialistas em transformar piscinas em espelhos de água pura e cristalina. Cuidamos da sua piscina com excelência e compromisso.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Nossos Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Tratamento sob Demanda</a></li>
+                        <li><a href="#">Contrato Semanal</a></li>
+                        <li><a href="#">Limpeza Completa</a></li>
+                        <li><a href="#">Manutenção de Equipamentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+5500000000000">(00) 00000-0000</a></li>
+                        <li><a href="mailto:contato@crystalclear.com.br">contato@crystalclear.com.br</a></li>
+                        <li><a href="#">Av. Exemplo, 123 - Cidade - Estado</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Crystal Clear - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
