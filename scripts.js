@@ -76,6 +76,45 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// Navegação suave para todos os links internos
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').replace('#', '');
+        const target = document.getElementById(targetId);
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Menu mobile toggle
+document.getElementById('menuToggle').onclick = function() {
+    document.getElementById('navigation').classList.toggle('active');
+};
+
+// Slider (exemplo simples)
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+// FAQ toggle
+function toggleFaq(element) {
+    const faqItem = element.parentElement;
+    faqItem.classList.toggle('active');
+    const answer = faqItem.querySelector('.faq-answer');
+    if (faqItem.classList.contains('active')) {
+        answer.style.display = 'block';
+        element.querySelector('.faq-icon').textContent = '-';
+    } else {
+        answer.style.display = 'none';
+        element.querySelector('.faq-icon').textContent = '+';
+    }
+}
+
 // Add active class to navigation links when scrolling
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
