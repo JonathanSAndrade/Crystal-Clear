@@ -4,6 +4,9 @@
     --azul: #50c8ec;
     --prata: #C0C0C0;
     --dourado: #D4AF37;
+    --cinza: #4A4D4F;
+    --cinza2: #8A8D8F;
+
 }
 
 /* Reset e estilos base */
@@ -325,17 +328,17 @@ header {
 .service-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--dourado);
 }
 
 .service-description {
-    color: var(--azul);
+    color: var(--cinza);
     line-height: 1.6;
 }
 
 /* Procedures Section */
 .procedures {
-    background: var(--black);
+    background: var(--branco);
 }
 
 .procedures-content {
@@ -359,12 +362,16 @@ header {
     background: var(--prata);
     border-radius: 8px;
     transition: all 0.3s ease;
+    border: 1px solid var(--dourado);
+    backdrop-filter: blur(10px);
 }
 
 .procedure-item:hover {
     background: linear-gradient(135deg, var(--branco) 0%, var(--prata) 100%);
     ;
     transform: translateX(10px);
+    border: 1px solid var(--dourado);
+    backdrop-filter: blur(10px);
 }
 
 .check-icon {
@@ -373,7 +380,7 @@ header {
 }
 
 .procedure-text {
-    color: var(--dourado);
+    color: var(--cinza);
     font-size: 1.1rem;
 }
 
@@ -450,7 +457,7 @@ header {
 }
 
 .benefit-description {
-    color: var(--azul);
+    color: var(--cinza);
     font-size: 0.9rem;
 }
 
@@ -545,7 +552,7 @@ header {
 }
 
 .slide-info p {
-    color: var(--light-blue);
+    color: var(--azul);
 }
 
 .slider-nav {
@@ -616,21 +623,21 @@ header {
 }
 
 .testimonial-text {
-    color: var(--white);
+    color: var(--cinza2);
     line-height: 1.6;
     margin-bottom: 1.5rem;
     flex-grow: 1;
 }
 
 .testimonial-author {
-    color: var(--primary-blue);
+    color: var(--dourado);
     font-weight: 600;
     text-align: right;
 }
 
 /* FAQ Section */
 .faq {
-    background: var(--black);
+    background: var(--branco);
 }
 
 .faq-list {
@@ -660,7 +667,7 @@ header {
 }
 
 .faq-question h3 {
-    color: var(--azul);
+    color: var(--dourado);
     font-size: 1.1rem;
     margin: 0;
     flex: 1;
@@ -683,9 +690,12 @@ header {
 }
 
 .faq-answer p {
-    color: var(--dourado);
+    color: var(--cinza2);
     line-height: 1.6;
     margin: 0;
+    -webkit-text-stroke: 0.9px var(--cinza2);
+    /* Espessura e cor do contorno */
+
 }
 
 /* Contact Section */
@@ -724,12 +734,12 @@ header {
 }
 
 .contact-details h3 {
-    color: var(--azul);
+    color: var(--dourado);
     margin-bottom: 0.5rem;
 }
 
 .contact-details p {
-    color: var(--azul);
+    color: var(--cinza);
 }
 
 .social-links {
@@ -782,7 +792,7 @@ header {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--dourado);
     border-radius: 8px;
-    color: var(--white);
+    color: var(--dourado);
     font-family: inherit;
     transition: all 0.3s ease;
 }
@@ -820,7 +830,7 @@ footer {
 }
 
 .footer-text {
-    color: var(--azul);
+    color: var(--cinza);
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -851,7 +861,7 @@ footer {
 }
 
 .footer-links a {
-    color: var(--azul);
+    color: var(--cinza);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -865,7 +875,8 @@ footer {
     color: var(--dourado);
     padding-top: 2rem;
     margin-top: 2rem;
-    border-top: 1px solid Var(--dourado);        ;
+    border-top: 1px solid Var(--dourado);
+    ;
 }
 
 /* Responsividade */
